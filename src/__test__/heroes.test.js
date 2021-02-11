@@ -12,4 +12,5 @@ test('Тестируем функцию на возврат корректног
     { name: 'лучник', health: 80 },
   ];
   expect(sortHeroes(data)).toEqual(received);
+  expect(sortHeroes(data)).not.toBe(received);
 });
